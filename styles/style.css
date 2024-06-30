@@ -1,0 +1,78 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.classificacao {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #FFF;
+    background-color: #000;
+    padding: 5px;
+    border: 3px solid red;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.classificacao.green {
+    border-color: #28a745;
+}
+
+.classificacao.yellow {
+    border-color: #ffc107;
+}
+
+.classificacao.red {
+    border-color: #dc3545;
+}
+
+.titulo {
+    font-weight: 700;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.titulo:hover {
+    color: #1442ac;
+    text-decoration: none !important;
+}
+
+.imagem {
+    cursor: pointer;
+}
+
+.filtro-tipo,
+.filtro-ordem {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtro-tipo:hover,
+.filtro-ordem:hover {
+    text-decoration: underline;
+}
+
+.filme-fundo {
+    background-image: linear-gradient(to right, #000 150px, #00000058 100%), url(https://image.tmdb.org/t/p/original/xg27NrXi7VXCGUr7MG75UqLl6Vg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icones {
+    color: #000 !important;
+}
+
+.text-second {
+    color: #555 !important;
+}
