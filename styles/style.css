@@ -63,7 +63,6 @@ body {
 }
 
 .filme-fundo {
-    background-image: linear-gradient(to right, #000 150px, #00000058 100%), url(https://image.tmdb.org/t/p/original/xg27NrXi7VXCGUr7MG75UqLl6Vg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,4 +74,11 @@ body {
 
 .text-second {
     color: #555 !important;
+}
+
+#peoples,
+#participacao-filmes,
+#participacao-series {
+    overflow: auto;
+    max-height: 500px;
 }
