@@ -36,14 +36,14 @@ getTMDB(`tv/${idSeries}`, 1).then(data => {
 getTMDB(`tv/${idSeries}/credits`, 1).then(data => {
     data.cast.forEach(pessoa => {
         document.querySelector('#peoples').innerHTML += (`
-            <div class="col-6 col-md-3 mb-4">
+            <a href="/pages/pagina-pessoa/?idpessoa=${pessoa.id}" class="col-6 col-md-3 mb-4">
                 <div class="card">
-                    <img src="${pessoa.profile_path ? getIMG(pessoa.profile_path, 'w300') : '../../assets/img/imagemvazia.png'}"
+                    <img src="${pessoa.profile_path ? getIMG(pessoa.profile_path, 'w300') : '/assets/img/imagemvazia.png'}"
                         alt="..." class="card-img-top imagem">
                     <h5 class="card-title pt-2 px-2 titulo">${pessoa.name}</h5>
                     <p class="card-text pb-2 px-2">${pessoa.character}</p>
                 </div>
-            </div>
+            </a>
         `)
     })
 })
@@ -54,7 +54,7 @@ getTMDB(`tv/${idSeries}/similar`, 1).then(data => {
             <div class="col-12 col-md-3" style="margin-bottom: 20px;">
                 <div class="card">
                     <a href="./pages/pagina-serie/?idserie=${filme.id}">
-                        <img src="${filme.poster_path ? getIMG(filme.poster_path, 'w500') : '../../assets/img/imagemvazia.png'}" alt="..." class="card-img-top imagem">
+                        <img src="${filme.poster_path ? getIMG(filme.poster_path, 'w500') : '/assets/img/imagemvazia.png'}" alt="..." class="card-img-top imagem">
                     </a>
                     <a href="./pages/pagina-serie/?idserie=${filme.id}">
                         <h5 class="card-title pt-2 px-2 titulo">${filme.title || filme.name}</h5>

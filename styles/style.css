@@ -47,10 +47,6 @@ body {
     text-decoration: none !important;
 }
 
-.imagem {
-    cursor: pointer;
-}
-
 .filtro-tipo,
 .filtro-ordem {
     cursor: pointer;

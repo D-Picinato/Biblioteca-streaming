@@ -39,7 +39,7 @@ const setTMDB = (typeContent, ano, url, page) => {
                     <div class="col-12 col-md-3" style="margin-bottom: 20px;">
                         <div class="card">
                             <a href="./pages/pagina-filme/?idfilme=${filme.id}">
-                                <img src="${filme.poster_path ? getIMG(filme.poster_path, 'w500') : '../../assets/img/imagemvazia.png'}" alt="..." class="card-img-top imagem">
+                                <img src="${filme.poster_path ? getIMG(filme.poster_path, 'w500') : '/assets/img/imagemvazia.png'}" alt="..." class="card-img-top imagem">
                             </a>
                             <a href="./pages/pagina-filme/?idfilme=${filme.id}">
                                 <h5 class="card-title pt-2 px-2 titulo">${filme.title}</h5>
